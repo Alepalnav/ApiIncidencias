@@ -1,0 +1,23 @@
+<h1> Añadir incidencia </h1> <!-- mostrará Editar cuando se edite -->
+<form >
+<div class="mb-3">
+<label for="title" class="form-label">Título</label>
+<input type="text" class="form-control" id="title" aria-describedby="titleHelp"  name="title">
+<div id="titleHelp" class="form-text">Introduce un título descriptivo.</div>
+</div>
+<div class="mb-3">
+<label for="description" class="form-label">Description</label>
+<textarea class="form-control" placeholder="Describe la incidencia detalladamente"
+id="description"  name="description"></textarea>
+</div>
+<div class="mb-3" >
+<label class="form-label" for="status">Estado</label>
+<select class="form-select" aria-label="Default select example" id="status"  name="status">
+<option selected>Selecciona el estado</option>
+<option value="abierta">Abierta</option>
+<option value="en proceso">En proceso</option>
+<option value="cerrada">Cerrada</option>
+</select>
+</div>
+<button type="submit" class="btn btn-primary">Añadir</button>
+</form>
